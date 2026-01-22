@@ -1,0 +1,104 @@
+body {
+  background-color: #201c1c;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+.center {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+}
+
+.intro {
+  position: relative;
+  z-index: 2;
+  font-weight: 400;
+  animation: introFade 0.8s ease forwards;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  line-height: 1.1;
+  margin: 0.3em 0;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+h1:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.name {
+  color: #ff4d5a;
+  transition: text-shadow 0.3s ease;
+}
+
+.name:hover {
+  text-shadow: 0 0 15px rgba(255, 77, 90, 0.7);
+}
+
+.tagline {
+  margin-top: 12px;
+  font-size: 1.2rem;
+  opacity: 0;
+  animation: fadeUp 0.8s ease forwards;
+  animation-delay: 0.4s;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: clamp(20px, 5vw, 60px);
+  margin-top: 30px;
+  opacity: 0;
+  animation: fadeUp 0.8s ease forwards;
+  animation-delay: 0.6s;
+}
+
+button {
+  font-size: 1.2rem;
+  width: 150px;
+  color: #ff4d5a;
+  border: 2px solid #ff4d5a;
+  background-color: transparent;
+  padding: 10px 20px;
+  cursor: pointer;
+  outline: none;
+  box-shadow: none;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+button:hover {
+  background-color: #ff4d5a;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(255, 77, 90, 0.35);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 12px rgba(255, 77, 90, 0.25);
+}
+
+button:focus,
+button:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,155 @@
+.contact {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8);
+  padding-bottom: 80px;
+}
+
+.contact h1 {
+  text-align: center;
+  padding: 50px 0;
+  width: 100%;
+  margin: 0;
+}
+
+.contact-content {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+.contact-text {
+  text-align: center;
+  max-width: 700px;
+}
+
+.contact-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: white;
+  font-family: Verdana, sans-serif;
+  letter-spacing: 1px;
+}
+
+.contact-text p {
+  font-family: Arial, sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #ccc;
+}
+
+.contact-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  width: 100%;
+  max-width: 900px;
+}
+
+.ContactLink {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 30px;
+  border-radius: 15px;
+  border: 2px solid transparent;
+  background:
+    linear-gradient(#000, #000) padding-box,
+    linear-gradient(45deg, #fd3744, #2421fd) border-box;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.ContactLink:hover {
+  background:
+    linear-gradient(#0000003b, #0000003a) padding-box,
+    linear-gradient(45deg, #fd3744, #2421fd) border-box;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(253, 55, 68, 0.3);
+}
+
+.contact-icon {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.contact-info {
+  flex: 1;
+}
+
+.contact-info h3 {
+  margin: 0 0 5px 0;
+  font-family: Verdana, sans-serif;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 500;
+}
+
+.contact-info p {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 0.95rem;
+  color: #ccc;
+  transition: color 0.2s;
+}
+
+.ContactLink:hover .contact-info p {
+  color: white;
+}
+
+.resume-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 18px 45px;
+  font-size: 1.2rem;
+  font-family: Verdana, sans-serif;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(45deg, #fd3744, #2421fd);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(253, 55, 68, 0.4);
+  margin-top: 20px;
+}
+
+.resume-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 35px rgba(253, 55, 68, 0.6);
+}
+
+.resume-btn:active {
+  transform: scale(0.98);
+}
+
+@media (max-width: 768px) {
+  .contact-links {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-text h2 {
+    font-size: 2rem;
+  }
+
+  .ContactLink {
+    padding: 18px 25px;
+  }
+
+  .resume-btn {
+    width: 100%;
+  }
+}
