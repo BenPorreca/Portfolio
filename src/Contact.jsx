@@ -36,6 +36,7 @@ function ContactLink({ icon, label, value, href, isEmail = false }) {
 
 function Contact() {
     const handleDownloadResume = () => {
+        // Replace with your actual resume file path
         const resumePath = '/Benjamin_Porreca_Resume.pdf';
         const link = document.createElement('a');
         link.href = resumePath;
@@ -62,14 +63,14 @@ function Contact() {
                     <ContactLink
                         icon={LinkedInIcon}
                         label="LinkedIn"
-                        value="linkedin.com/in/benjamin-porreca-98b217393/"
-                        href="https://www.linkedin.com/in/benjamin-porreca-98b217393/"
+                        value="Linkedin.com/in/Benjamin-Porreca"
+                        href="https://www.linkedin.com/in/benjamin-porreca"
                     />
                     
                     <ContactLink
                         icon={GitHubIcon}
                         label="GitHub"
-                        value="github.com/BenPorreca"
+                        value="Github.com/BenPorreca"
                         href="https://github.com/BenPorreca"
                     />
                     
