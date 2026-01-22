@@ -36,7 +36,7 @@ function ContactLink({ icon, label, value, href, isEmail = false }) {
 
 function Contact() {
     const handleDownloadResume = () => {
-        const resumePath = '/resume.pdf';
+        const resumePath = '/Benjamin_Porreca_Resume.pdf';
         const link = document.createElement('a');
         link.href = resumePath;
         link.download = 'Benjamin_Porreca_Resume.pdf';
