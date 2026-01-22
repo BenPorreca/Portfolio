@@ -83,3 +83,40 @@
   padding-left: 120px;
   padding-right: 80px;
 }
+
+@media (max-width: 768px) {
+  .project h1 {
+    padding: 30px 20px;
+  }
+
+  .projectList {
+    gap: 50px;
+    padding: 30px 0;
+  }
+
+  .ProjectItem {
+    flex-direction: column !important;
+    min-height: auto;
+    margin: 0;
+  }
+
+  .project-img-box {
+    width: 100%;
+    padding: 30px 20px;
+  }
+
+  .project-text-box {
+    width: 100%;
+    padding: 30px 20px !important;
+    text-align: center;
+  }
+
+  .project-text-box h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+
+  .project-text-box p {
+    font-size: 1rem;
+  }
+}

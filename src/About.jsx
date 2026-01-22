@@ -13,7 +13,7 @@ import Linux from "./assets/linux.png";
 import MySQL from "./assets/mysql.png";
 import CSS from "./assets/css.svg";
 import CS from "./assets/cs.png";
-import Leetcode from "./assets/Leetcode.png";
+import Leetcode from "./assets/leetcode.png";
 
 function SkillCard({skillName, picName, skillDesc}){
     const [isOpen, setIsOpen] = useState(false);
