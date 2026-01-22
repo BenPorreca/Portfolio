@@ -36,7 +36,6 @@ function ContactLink({ icon, label, value, href, isEmail = false }) {
 
 function Contact() {
     const handleDownloadResume = () => {
-        // Replace with your actual resume file path
         const resumePath = '/resume.pdf';
         const link = document.createElement('a');
         link.href = resumePath;
